@@ -9,8 +9,8 @@ function LandingPage(){
      user-scalable=0' ></meta>
      <link rel="stylesheet" href="https://use.typekit.net/pbx2obo.css"></link>
         <div className="body">
-            <h1>Nebula</h1>
-            <img src="../../pics/SpaceMan1.svg" alt="space man" width="500" height="600"/>
+            <h1>NEBULA</h1>
+            <img src="../../pics/spaceman.png" alt="space man" width="500" height="600"/>
         </div>
         </>
     );
