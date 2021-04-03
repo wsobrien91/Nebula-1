@@ -1,19 +1,34 @@
-import React from 'react';
-import './LandingPage.css';
+import React from "react";
+import "./LandingPage.css";
+import man from "../../pics/spaceman.png";
+import anime from "animejs/lib/anime.es.js";
+// import {wiggle} from '../../utils/animations.js'
 
-function LandingPage(){
-    return(
-        <>
-        <meta name='viewport' 
-     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
-     user-scalable=0' ></meta>
-     <link rel="stylesheet" href="https://use.typekit.net/pbx2obo.css"></link>
-        <div className="body">
-            <h1>NEBULA</h1>
-            <img src="../../pics/spaceman.png" alt="space man" width="500" height="600"/>
-        </div>
-        </>
-    );
+function LandingPage() {
+  anime({
+    targets: ".man",
+    translateX: 200,
+    direction: 'alternate',
+    loop: true,
+    easing: 'linear',
+    duration: 50000,
+  });
+  // wiggle("div")
+
+  return (
+    <>
+      <div className="body">
+        <h1>NEBULA</h1>
+        <img
+          className="man"
+          src={man}
+          alt="space man"
+          width="300"
+          height="300"
+        />
+      </div>
+    </>
+  );
 }
 
-export default LandingPage
+export default LandingPage;
